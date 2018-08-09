@@ -1,0 +1,32 @@
+
+<div class="container" >
+	<div class="row">
+		
+            <table class="table table-dark">
+                  <thead>
+            <tr>
+                  <th>Boat type</th>
+                  <th>Service</th>
+                  <th>Boat Location</th>
+                  <th>Job type</th>
+                  <th>Status</th>
+            </tr>
+              </thead>   
+              <tbody>
+               <tr *ngFor="let boat of boats">
+               <td>{{ boat.boatType }}</td>
+               <td>{{ boat.service }}</td>
+               <td>{{ boat.location }}</td>
+               <td>{{ boat.jobType }}</td>
+               <td>{{ boat.status }}</td>
+               <td><button name="Accepts" class="btn btn-success" (click)="updateStatus(boat,0)" >Accept</button></td>
+               <td><button name="Declines" class="btn btn-danger" (click)="updateStatus(boat,1)" >Decline</button></td>
+                           
+             </tr>
+                
+  
+            </tbody>
+          </table>
+      </div>
+	</div>
+

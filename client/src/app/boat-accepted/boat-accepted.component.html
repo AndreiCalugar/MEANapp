@@ -1,0 +1,29 @@
+
+<div class="container" >
+	<div class="row">
+		
+            <table class="table table-dark">
+                  <thead>
+            <tr>
+                  <th>Boat type</th>
+                  <th>Service</th>
+                  <th>Boat Location</th>
+                  <th>Job type</th>
+                  <th>Status</th>
+            </tr>
+              </thead>   
+              <tbody>
+               <tr *ngFor="let boat of boats" >
+               <td *ngIf="boat.status ==='accepted'">{{ boat.boatType }}</td>
+               <td *ngIf="boat.status ==='accepted'">{{ boat.service }}</td>
+               <td *ngIf="boat.status ==='accepted'">{{ boat.location }}</td>
+               <td *ngIf="boat.status ==='accepted'">{{ boat.jobType }}</td>
+               <td *ngIf="boat.status ==='accepted'">{{ boat.status }}</td>          
+             </tr>
+                
+  
+            </tbody>
+          </table>
+      </div>
+	</div>
+
